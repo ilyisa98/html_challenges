@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+ <head>
+   <title>Coffe_Shop_Form</title>
+   <link rel="stylesheet" href="formstyle.css" type="text/css">
+ </head>
+
+<body>
+  <center>
+    <fieldset>
+  <legend><h1>Coffee Shop Form</h1></legend>
+
+  <form action="somescript.php" method="post">
+  <p><l>Name:</l> <input type="text" name="name" value="" placeholder="Name"></p>
+
+    <p><l>Contact number:</l> <input type="number" name="contactnumber" value="" placeholder="Contact number "minlength="10" maxlength="10"></p>
+
+    <p><l>Email:</l> <input type="email" name="email" value="" placeholder="Email"></p>
+
+    <p><l>Gender:</l> <input type="radio" name="gender">Male</p>
+
+         <l><input type="radio" name="gender">Female</l>
+
+    <l><input type="radio" name="gender" checked>Other</l>
+
+    <p><l>Date of birth:</l> <input type="date" name="date" min="1900-01-01" max="2005-01-01"></p>
+    <p><l>Password:</l> <input type="password" name="password" value="" placeholder="Password" min=7 max=""14></p>
+    <p><l>Postal Address:</l></p>
+<textarea name="address" value="" placeholder="Address" rows="8" cols="50"></textarea>
+    <!-- </address> -->
+
+  <div>  <p><h3>Questions</h3></p>
+<p><l>How often do you visit coffee shops?</l></p>
+ <input type="number" name="number" max="999">
+<p>What is your favorite coffee shop? </p>
+<select name="favorite">
+   <option value="mugg&bean">Mugg&Bean</option>
+   <option value="starbucks">Star Bucks</option>
+   <option value="xpresso">Xpresso</option>
+   <option value="motherland">Motherland</option>
+ </select>
+ <p>Where is it located?</p>
+ <select name="location">
+    <option value="cape town">Cape Town</option>
+    <option value="durban">Duban</option>
+    <option value="joburg">Joburg</option>
+    <option value="port elizabeth">Port Elizabeth</option>
+    option value="port elizabeth">Port Elizabeth</option>
+  </select>
+<p>What do you typically order to drink?</p>
+<select name="drink">
+   <option value="americano">Americano</option>
+   <option value="latte">Latte</option>
+   <option value="hotchocolate">Hot Chocolate</option>
+   <option value="tea">Tea</option>
+ </select>
+<p>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?</p>
+<select name="preferance">
+  <option value="large">Large National Chain</option>
+  <option value="smallprivate">Small Private</option>
+</select>
+
+</div>
+
+<br>
+
+<input type="submit" value="Submit">
+
+<br>
+
+<button type="reset" value="Reset">Reset</button>
+  </form>
+</fieldset>
+</center>
+</body>
+
+</html>

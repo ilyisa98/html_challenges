@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>NestedTableChallenge</title>
+  <style>
+
+.table_a,.table_1,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+      text-align: center;
+      padding: 0 px;
+  }
+
+  .table_3{
+    background-color: orange;
+  }
+
+  .t2{
+    background-color: yellow;
+  }
+  .table_2,.table_3,.t1,.t2{
+    padding: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <b>Manipulating table properties</b>
+    <table class="table_a">
+      <tr>
+        <td>1</td>
+        <td colspan="4">2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td style="background:orange">4</td>
+        <td style="background:orange">5</td>
+        <td rowspan="2" colspan="2" style="background:yellow">6</td>
+      </tr>
+      <tr>
+        <td style="background:orange">7</td>
+        <td style="background:orange">8</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background:yellow">9</td>
+        <td colspan="2" style="background:yellow">10</td>
+      </tr>
+    </table>
+  </div>
+
+  <hr>
+
+  <div>
+    <b>Nested tables<b>
+
+      <table class="table_1">
+        <tr>
+    	  <td>1</td>
+    	  <td>2</td>
+        </tr>
+        <tr>
+    	  <td>3</td>
+    	  <td class="t1">
+    	  <table class="table_2">
+    	     <tr>
+    	       <td class="t2">
+    		    <table class="table_3">
+    	          <tr>
+    	            <td class="t3">4</td>
+    		        <td class="t3">5</td>
+    	          </tr>
+    		       <tr>
+    		        <td class="t3">7</td>
+    		        <td class="t3">8</td>
+    		       </tr>
+    	       </table>
+    		  </td>
+    		   <td class="t2">6</td>
+    	     </tr>
+    	     <tr>
+    	      <td class="t2">9</td>
+    	      <td class="t2">10</td>
+    	     </tr>
+    	  </table>
+    	  </td>
+        </tr>
+      </table>
+     </body>
+    </html>
+      </div>
+
+      <!-- <table border="1px" style="width: 300px; height: 300px;">
+      <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td>
+    <table border="1px" style="width: 100%; height: 100%; background-color: yellow;">
+    <tr>
+    <td>
+    <table border="1px" style="width: 100%; height: 100%; background-color: orange;">
+    <tr>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>8</td>
+</tr>
+</table></td>
+<td>6</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10</td>
+</tr>
+</table>
+</td>
+</tr>
+</table> -->
+</body>
+
+</html>
